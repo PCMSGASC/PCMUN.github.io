@@ -1,105 +1,130 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025培正杯模擬聯合國</title>
+    <title>2023培正杯模拟联合国大会</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
         }
-        header {
-            background-color: #f4f4f4;
-            padding: 10px 0;
-            border-bottom: 3px solid #007bff;
+
+        body {
+            line-height: 1.6;
         }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
+
+        .nav {
+            background-color: #006791;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
         }
-        .logo {
-            display: inline-block;
-            vertical-align: middle;
-        }
-        .logo img {
-            height: 60px;
-        }
-        .tagline {
-            display: inline-block;
-            vertical-align: middle;
-            font-size: 24px;
-            margin-left: 20px;
-        }
-        nav {
-            text-align: right;
-            margin-top: 10px;
-        }
-        nav a {
-            color: #007bff;
+
+        .nav a {
+            color: white;
             text-decoration: none;
-            margin-left: 10px;
+            margin: 0 1rem;
+            font-weight: 500;
         }
-        .main-content {
-            margin-top: 20px;
-        }
-        .main-content h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-        .main-content p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-        .image-container {
-            float: left;
-            margin-right: 20px;
-            margin-bottom: 20px;
-        }
-        .image-container img {
-            width: 100%;
-            max-width: 400px;
-        }
-        footer {
-            background-color: #f4f4f4;
-            padding: 10px 0;
+
+        .header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://images.unsplash.com/photo-1589329481958-4210a53a1d3b') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
             text-align: center;
-            margin-top: 20px;
+        }
+
+        .committee {
+            padding: 3rem 15%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .committee h2 {
+            color: #006791;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid #006791;
+            padding-left: 1rem;
+        }
+
+        .info-box {
+            background: #f5f5f5;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #006791;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .committee {
+                padding: 2rem 5%;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="https://example.com/logo.png" alt="培正杯聯合國標誌">
-            </div>
-            <div class="tagline">
-                培正杯模擬聯合國 - 2025年
-            </div>
-            <nav>
-                <a href="#">中文</a>
-                <a href="#">English</a>
-                <a href="#">Français</a>
-                <a href="#">Русский</a>
-                <a href="#">Español</a>
-            </nav>
+    <nav class="nav">
+        <a href="#home">首頁</a>
+        <a href="#chinese-modern">中文常規委員會</a>
+        <a href="#chinese-history">中文歷史委員會</a>
+        <a href="#english">英文委員會</a>
+    </nav>
+
+    <header class="header">
+        <div>
+            <h1>2023培正杯模擬聯合國大會</h1>
+            <p>2023年11月15-17日 | 澳門培正中學</p>
         </div>
     </header>
-    <div class="container main-content">
-        <h1>努力實現全球可持續和平與發展</h1>
-        <div class="image-container">
-            <img src="https://example.com/image.jpg" alt="學生參與活動">
+
+    <section class="committee" id="chinese-modern">
+        <h2>中文常規委員會：剛果金-盧旺達局勢</h2>
+        <div class="info-box">
+            <p>📅 會議時間：11月15日 09:00-17:00</p>
+            <p>📍 會議地點：國際會議廳A</p>
+            <p>📜 議題：東非大湖地區武裝衝突與人道主義危機</p>
         </div>
-        <p>培正杯模擬聯合國是一個讓學生們能夠體驗國際事務討論和決策過程的平臺。通過模擬聯合國會議，學生們將學習如何解決全球性問題，如氣候變化、飢餓、營養不良和衝突等挑戰。</p>
-        <p>作為全世界國際合作的首要橋樑，聯合國系統擁有獨特的能力，為各國提供一個共同商討和解決問題的平臺。培正杯模擬聯合國旨在培養學生的領導力、溝通能力和國際視野，讓他們成為未來的全球公民。</p>
-    </div>
+        <h3>背景概述</h3>
+        <p>自2022年以來，剛果民主共和國東部地區與盧旺達邊境衝突持續升級...（此處添加具體背景內容）</p>
+    </section>
+
+    <section class="committee" id="chinese-history">
+        <h2>中文歷史委員會：1815維也納和會</h2>
+        <div class="info-box">
+            <p>📅 會議時間：11月16日 09:00-17:00</p>
+            <p>📍 會議地點：歷史模擬廳</p>
+            <p>📜 議題：拿破崙戰爭後的歐洲秩序重建</p>
+        </div>
+        <h3>歷史背景</h3>
+        <p>1814-1815年召開的維也納會議是近代國際關係史的重要轉折點...（此處添加具體歷史背景）</p>
+    </section>
+
+    <section class="committee" id="english">
+        <h2>English Committee: International Criminal Police Organization</h2>
+        <div class="info-box">
+            <p>📅 Date: Nov 17 09:00-17:00</p>
+            <p>📍 Venue: International Hall B</p>
+            <p>📜 Agenda: Combating Transnational Cybercrime</p>
+        </div>
+        <h3>Committee Background</h3>
+        <p>With the rapid development of information technology... (Add English content here)</p>
+    </section>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2025 培正杯模擬聯合國. All rights reserved.</p>
-        </div>
+        <p>© 2023 培正杯模擬聯合國大會 版權所有</p>
+        <p>聯絡郵箱：mun@pui-ching.edu.mo</p>
     </footer>
 </body>
 </html>
