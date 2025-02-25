@@ -14,13 +14,17 @@
 
         body {
             line-height: 1.6;
+            background-color: #e0f7fa; /* 浅藍色背景 */
         }
 
         .nav {
-            background-color: #006791;
+            background-color: #0097a7; /* 更浅的藍色 */
             padding: 1rem;
             position: sticky;
             top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .nav a {
@@ -32,7 +36,7 @@
 
         .header {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                        url('https://ibb.co/Ngfr01QV') center/cover;
+                        url('https://i.ibb.co/twnz0Zkm/cover.jpg') center/cover;
             height: 400px;
             display: flex;
             align-items: center;
@@ -47,27 +51,32 @@
         }
 
         .committee h2 {
-            color: #006791;
+            color: #0097a7; /* 更淺的藍色 */
             margin-bottom: 1.5rem;
-            border-left: 5px solid #006791;
+            border-left: 5px solid #0097a7; /* 更淺的藍色 */
             padding-left: 1rem;
         }
 
         .info-box {
-            background: #f5f5f5;
+            background: #ffffff;
             padding: 1rem;
             margin: 1rem 0;
             border-radius: 5px;
+            border: 1px solid #ddd;
         }
 
         footer {
-            background-color: #006791;
+            background-color: #0097a7; /* 更淺的藍色 */
             color: white;
             padding: 2rem;
             text-align: center;
         }
 
         @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
             .committee {
                 padding: 2rem 5%;
             }
@@ -76,10 +85,16 @@
 </head>
 <body>
     <nav class="nav">
-        <a href="#home">首頁</a>
-        <a href="#chinese-modern">中文常規委員會</a>
-        <a href="#chinese-history">中文歷史委員會</a>
-        <a href="#english">英文委員會</a>
+        <div>
+            <a href="#home">首頁</a>
+            <a href="#register">註冊</a>
+            <a href="#schedule">重要日程</a>
+        </div>
+        <div>
+            <a href="#chinese-modern">中文常規委員會</a>
+            <a href="#chinese-history">中文歷史委員會</a>
+            <a href="#english">英文委員會</a>
+        </div>
     </nav>
 
     <header class="header">
@@ -88,6 +103,25 @@
             <p>2025年6月25-30日 | 澳門培正中學</p>
         </div>
     </header>
+
+    <section id="register" class="committee">
+        <h2>註冊</h2>
+        <div class="info-box">
+            <p>請填寫以下表單以完成註冊：</p>
+            <!-- 這裡可以加入一個簡單的表單 -->
+        </div>
+    </section>
+
+    <section id="schedule" class="committee">
+        <h2>重要日程</h2>
+        <div class="info-box">
+            <ul>
+                <li><strong>6月25日:</strong> 開幕式</li>
+                <li><strong>6月26日至29日:</strong> 各委員會會議</li>
+                <li><strong>6月30日:</strong> 結束儀式及頒獎典禮</li>
+            </ul>
+        </div>
+    </section>
 
     <section class="committee" id="chinese-modern">
         <h2>中文常規委員會：剛果金-盧旺達局勢</h2>
@@ -128,3 +162,6 @@
     </footer>
 </body>
 </html>
+
+
+
